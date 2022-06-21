@@ -1,2 +1,5 @@
-@import url(/css/global.css);
-@import url(/css/introducao.css);
+@import url(./global/global.css);
+@import url(./home/introducao.css);
+@import url(./utilidades/componentes.css);
+@import url(./utilidades/tipografia.css);
+@import url(./utilidades/cores.css);
