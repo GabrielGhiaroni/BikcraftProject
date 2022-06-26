@@ -1,0 +1,38 @@
+.termos-bg {
+    background-color: var(--cor-11);
+}
+
+.termos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.termos-conteudo-bg {
+    background-color: var(--cor-0);
+}
+
+.termos-conteudo {
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+
+.termos-conteudo h3 {
+    margin-bottom: 20px;
+}
+
+.termos-conteudo p+h3 {
+    margin-top: 40px;
+}
+
+.termos-conteudo li:not(:first-child) {
+    margin-top: 24px;
+}
+
+.termos-conteudo li:last-child {
+    margin-bottom: 40px;
+}
+
+.termos-conteudo li,
+.termos-conteudo p {
+    max-width: 75ch
+}
