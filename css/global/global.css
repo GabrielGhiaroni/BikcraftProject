@@ -10,7 +10,14 @@ body {
     color: #111111;
 }
 
-h1, h2, h3, h4, ul, blockquote, p {
+h1,
+h2,
+h3,
+h4,
+ul,
+blockquote,
+p,
+dd {
     margin: 0px;
 }
 

@@ -66,17 +66,133 @@
     padding-top: 0px;
 }
 
-#seguros .header-menu .seguros-link::after {
+#seguros .seguros-link {
+    color: var(--cor-p1);
+}
+
+#seguros .seguros-link:hover::after {
+    display: none;
+}
+
+.seguros-vantagens-bg {
+    background-color: var(--cor-12);
+}
+
+.seguros-vantagens {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.seguros-vantagens h2 {
+    margin-bottom: 60px;
+}
+
+.seguros-vantagens ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    row-gap: 40px;
+}
+
+.seguros-vantagens ul img,
+.seguros-vantagens ul h3 {
+    margin-bottom: 8px
+}
+
+.seguros-perguntas-frequentes {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.seguros-perguntas-frequentes h2 {
+    margin-bottom: 60px;
+}
+
+.seguros-perguntas-frequentes dl div {
+    padding: 30px 20px;
+    border-radius: 4px;
+}
+
+.seguros-perguntas-frequentes dl div:nth-child(odd) {
+    background-color: var(--cor-1);
+}
+
+.seguros-perguntas-frequentes dd {
+    max-width: 80ch;
+    padding-top: 16px;
+    padding-left: 20px;
+}
+
+.seguros-perguntas-frequentes dt {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.seguros-perguntas-frequentes dt::before {
     content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--cor-0);
-    position: absolute;
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    background: var(--cor-p1);
+
+}
+
+.seguros-perguntas-frequentes dt::after {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 14px;
+    background: url(../../img/icones/seta-abrir.svg);
+}
+
+.seguros-perguntas-frequentes dt:hover::after {
+    transform: rotate(180deg);
+    transition: 0.3s;
 }
 
 @media (max-width: 800px) {
     .seguros {
         grid-template-columns: 1fr;
+    }
+
+    .seguros-vantagens {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .seguros-perguntas-frequentes {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .seguros-perguntas-frequentes h2 {
+        margin-bottom: 40px;
+    }
+
+    .seguros-vantagens ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seguros-vantagens ul p {
+        max-width: 60ch;
+    }
+
+    .seguros-perguntas-frequentes dt {
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .seguros-perguntas-frequentes dt::before,
+    .seguros-perguntas-frequentes dt::after {
+        margin-top: 8px;
+    }
+
+    @media (max-width:600px) {
+        .seguros-vantagens ul {
+            grid-template-columns: 1fr;
+        }
     }
 }

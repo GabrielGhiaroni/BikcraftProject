@@ -116,13 +116,12 @@
     margin-right: 8px;
 }
 
-#bicicletas .header-menu .bicicletas-link::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--cor-0);
-    position: absolute;
+#bicicletas .bicicletas-link {
+    color: var(--cor-p1);
+}
+
+#bicicletas .bicicletas-link:hover::after {
+    display: none;
 }
 
 @media (max-width: 800px) {
