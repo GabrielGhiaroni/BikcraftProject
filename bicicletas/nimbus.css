@@ -79,3 +79,38 @@
 .ficha-tecnica-conteudo li:not(:last-child) {
     margin-bottom: 20px;
 }
+
+#nimbus .bicicletas-lista {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bicicleta-seguro-bg {
+    background-color: var(--cor-11);
+    box-shadow: inset 0px 120px var(--cor-0), inset 0px -120px var(--cor-12);
+}
+
+.bicicleta-seguro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    gap: 40px;
+    align-items: center;
+}
+
+.bicileta-seguro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.bicicleta-seguro-conteudo h2 {
+    padding-bottom: 32px;
+}
+
+.bicicleta-seguro-conteudo p {
+    padding-bottom: 20px;
+    max-width: 32ch;
+}
