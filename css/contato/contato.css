@@ -1,0 +1,89 @@
+#contato .header ul li:last-child {
+    color: var(--cor-p1);
+}
+
+.contato-bg {
+    background-color: var(--cor-11);
+}
+
+.contato-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 4px;
+}
+
+.contato-redes {
+    display: flex;
+    gap: 32px;
+}
+
+.contato-card-informacoes {
+    background-color: var(--cor-12);
+}
+
+.contato-card-informacoes h2 {
+    margin-bottom: 60px;
+}
+
+.contato-card-informacoes {
+    padding: 60px;
+}
+
+.contato-card-endereco li:nth-child(even) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.contato-card-endereco {
+    position: relative;
+}
+
+.contato-card-endereco {
+    margin-bottom: 32px;
+}
+
+
+/* .contato-card-endereco li:first-child::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../../img/icones/local.svg);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -28px
+} */
+
+.contato-card-endereco li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.contato-card-endereco img,
+.contato-card-informacoes address img {
+    width: 20px;
+}
+
+.contato-card-endereco li:not(:first-child),
+.contato-card-informacoes address a:nth-child(even),
+.contato-redes a {
+    padding-left: 28px;
+}
+
+.contato-card-informacoes address a {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.contato-card-informacoes address>a {
+    margin-bottom: 8px;
+}
+
+.contato-card-informacoes address a:nth-child(even) {
+    margin-bottom: 32px;
+}
+
+.contato-card-informacoes address a:last-child {
+    margin-bottom: 60px;
+}
