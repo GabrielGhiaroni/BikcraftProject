@@ -2,6 +2,27 @@
     background-color: var(--cor-11);
 }
 
+#seguros .header-menu li:not(:nth-child(even)) a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--cor-p1);
+    transition: 0.3s;
+    position: absolute;
+}
+
+#seguros .header-menu li:not(:nth-child(even)) a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+
+#seguros .header-menu li:nth-child(even) {
+    color: var(--cor-p1);
+}
+
 .seguros {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -64,14 +85,6 @@
 
 #seguros .seguros {
     padding-top: 0px;
-}
-
-#seguros .seguros-link {
-    color: var(--cor-p1);
-}
-
-#seguros .seguros-link:hover::after {
-    display: none;
 }
 
 .seguros-vantagens-bg {

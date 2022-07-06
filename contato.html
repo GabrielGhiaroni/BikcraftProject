@@ -31,36 +31,114 @@
             </nav>
         </div>
     </header>
-    <main class="contato-bg">
-        <div class="contato-titulo container">
-            <h3 class="font-2-l-b cor-5">RESPOSTAS EM ATÉ 24H</h3>
-            <h2 class="font-1-xxl cor-0">nosso contato<span class="cor-p1">.</span></h2>
+    <main>
+        <div class="contato-bg">
+            <div class="contato-titulo container">
+                <h3 class="font-2-l-b cor-5">RESPOSTAS EM ATÉ 24H</h3>
+                <h2 class="font-1-xxl cor-0">nosso contato<span class="cor-p1">.</span></h2>
+            </div>
         </div>
-        <div class="contato-card container">
-            <div class="contato-card-informacoes">
+        <div class="contato container">
+            <section class="contato-dados" aria-label="Endereço">
                 <h2 class="font-1-m cor-0">Loja Online</h2>
-                <ul class="contato-card-endereco font-2-s cor-4">
-                    <li><img src="./img/icones/local.svg" alt="icone-local">Rua Ali Perto, 35</li>
-                    <li>Rio de Janeiro - RJ</li>
-                    <li>Brasil</li>
-                </ul>
-                <address class="font-2-s cor-4">
-                    <a href=""><img src="./img/icones/email.svg" alt="icone-email">contato@bikcraft.com</a>
-                    <a href="">assistencia@bikcraft.com</a>
-                    <a href=""><img src="./img/icones/telefone.svg" alt="">+55 21 99999-9999</a>
+                <div class="contato-endereco font-2-s cor-4">
+                    <p>Rua Logo Ali, 35 - Botafogo</p>
+                    <p>Rio de Janeiro</p>
+                    <p>Brasil</p>
+                </div>
+                <address class="contato-meios font-2-s cor-4">
+                    <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+                    <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+                    <a href="tel:+5521999999999">+55 21 99999-9999</a>
                 </address>
                 <div class="contato-redes">
-                    <a href=""><img src="./img/redes/instagram-p.svg" alt="instagram-logo"></a>
-                    <a href=""><img src="./img/redes/facebook-p.svg" alt="facebook-logo"></a>
-                    <a href=""><img src="./img/redes/youtube-p.svg" alt="youtube-logo"></a>
+                    <a href="./">
+                        <img src="./img/redes/instagram-p.svg" alt="instagram-logo">
+                    </a>
+                    <a href="./">
+                        <img src="./img/redes/facebook-p.svg" alt="facebook-logo">
+                    </a>
+                    <a href="./">
+                        <img src="./img/redes/youtube-p.svg" alt="youtube-logo">
+                    </a>
                 </div>
-            </div>
-            <div class="contato-card-formulario">
-
-            </div>
+            </section>
+            <section class="contato-formulario" aria-label="Formulário">
+                <form class="form" action="./contato.html">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="(21) 99999-9999">
+                    </div>
+                    <div class="expansao-coluna">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com">
+                    </div>
+                    <div class="expansao-coluna">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+                    </div>
+                    <button class="botao expansao-coluna">Enviar Mensagem </button>
+                </form>
+            </section>
         </div>
     </main>
-    <footer class="footer-bg">
+
+
+    <article class="lojas-locais container">
+        <h2 class="font-1-xxl">lojas locais<span class="cor-p1">.</span></h2>
+        <div class="lojas-card">
+            <div class="loja">
+                <div>
+                    <img src="./img/lojas/rj.jpg" alt="loja-rio-de-janeiro">
+                </div>
+                <div class="loja-conteudo">
+                    <h3 class="font-1-xl">Rio de Janeiro</h3>
+                    <div class="loja-informacoes">
+                        <div class="loja-endereco-contato font-2-s cor-8">
+                            <p>Rua Logo Ali, 35</p>
+                            <p>Rio de Janeiro - RJ</p>
+                        </div>
+                        <div class="loja-endereco-contato font-2-s cor-8">
+                            <a href="mailto:rj@bikcraft.com">rj@bikcraft.com</a>
+                            <a href="tel:+5521999999999">+55 21 99999-9999</a>
+                        </div>
+                    </div>
+                    <p class="loja-horario font-1-s"> <img src="./img/icones/horario.svg" alt="icone-horario"> 08-18h,
+                        de Segunda
+                        a Domingo</p>
+                </div>
+            </div>
+            <div class="loja">
+                <div>
+                    <img src="./img/lojas/sp.jpg" alt="loja-sao-paulo">
+                </div>
+                <div class="loja-conteudo">
+                    <h3 class="font-1-xl">São Paulo</h3>
+                    <div class="loja-informacoes">
+                        <div class="loja-endereco-contato font-2-s cor-8">
+                            <p>Rua Próxima Esquina, 22</p>
+                            <p>São Paulo - SP</p>
+                        </div>
+                        <div class="loja-endereco-contato font-2-s cor-8">
+                            <a href="mailto:rj@bikcraft.com">sp@bikcraft.com</a>
+                            <a href="tel:+5521999999999">+55 11 99999-9999</a>
+                        </div>
+                    </div>
+                    <p class="loja-horario font-1-s"> <img src="./img/icones/horario.svg" alt="icone-horario"> 08-18h,
+                        de Segunda
+                        a Domingo</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+    <footer class=" footer-bg">
         <div class="footer container">
             <a href="./">
                 <img src="./img/bikcraft.svg" alt="bikcraft-logo">
@@ -91,7 +169,7 @@
                     <ul class="font-1-m cor-5">
                         <li><a href="./bicicletas.html">Bicicletas</a></li>
                         <li><a href="./seguros.html">Seguros</a></li>
-                        <li><a href="./">Contato</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
                         <li><a href="./termos.html">Termos e Condições</a></li>
                     </ul>
                 </nav>

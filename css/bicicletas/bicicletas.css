@@ -4,6 +4,27 @@
     background-color: var(--cor-11);
 }
 
+#bicicletas .header-menu li:not(:first-child) a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--cor-p1);
+    transition: 0.3s;
+    position: absolute;
+}
+
+#bicicletas .header-menu li:not(:first-child) a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+
+#bicicletas .header-menu li:first-child {
+    color: var(--cor-p1);
+}
+
 .bicicletas {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -116,13 +137,6 @@
     margin-right: 8px;
 }
 
-#bicicletas .bicicletas-link {
-    color: var(--cor-p1);
-}
-
-#bicicletas .bicicletas-link:hover::after {
-    display: none;
-}
 
 @media (max-width: 800px) {
     .bicicletas {
