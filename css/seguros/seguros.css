@@ -2,7 +2,7 @@
     background-color: var(--cor-11);
 }
 
-#seguros .header-menu li:not(:nth-child(even)) a::after {
+#seguros .header-menu li:not(:nth-child(2)) a::after {
     content: "";
     display: block;
     width: 0%;
@@ -12,14 +12,14 @@
     position: absolute;
 }
 
-#seguros .header-menu li:not(:nth-child(even)) a:hover::after {
+#seguros .header-menu li:not(:nth-child(2)) a:hover::after {
     content: "";
     display: block;
     width: 100%;
     height: 2px;
 }
 
-#seguros .header-menu li:nth-child(even) {
+#seguros .header-menu li:nth-child(2) {
     color: var(--cor-p1);
 }
 

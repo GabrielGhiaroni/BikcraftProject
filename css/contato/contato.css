@@ -2,7 +2,7 @@
     background: linear-gradient(var(--cor-11) 600px, var(--cor-1)0px)
 }
 
-#contato .header-menu li:not(:last-child) a::after {
+#contato .header-menu li:not(:nth-child(3)) a::after {
     content: "";
     display: block;
     width: 0%;
@@ -12,14 +12,14 @@
     position: absolute;
 }
 
-#contato .header-menu li:not(:last-child) a:hover::after {
+#contato .header-menu li:not(:nth-child(3)) a:hover::after {
     content: "";
     display: block;
     width: 100%;
     height: 2px;
 }
 
-#contato .header-menu li:last-child {
+#contato .header-menu li:nth-child(3) {
     color: var(--cor-p1);
 }
 
