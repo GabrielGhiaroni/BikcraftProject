@@ -29,3 +29,20 @@ function eventosPerguntas(botao) {
 };
 
 botoes.forEach(eventosPerguntas);
+
+//Galeria Imagens
+const imagemPrincipal = document.querySelector('.bicicleta-imagens img');
+const bicicletas = document.querySelectorAll('.bicicleta-imagens img');
+
+function alterarImagem(event) {
+    const imagemClicada = event.currentTarget;
+    const imagemPrincipalSrc = imagemPrincipal.src;
+    imagemPrincipal.src = imagemClicada.src;
+    imagemClicada.src = imagemPrincipalSrc;
+};
+
+function ouvinteEvento(img) {
+    img.addEventListener('click', alterarImagem);
+};
+
+bicicletas.forEach(ouvinteEvento);
